@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: purple;
+}
+
+video {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#player-container {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    display: table;
+    margin: 100px auto;
+}
+
+.inner-container {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.controls-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(56, 48, 48, 0.4);
+}
+
+.inner-player {
+    width: 100%;
+    max-width: 500px;
+    display: inline-flex;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.video-progress {
+    background-color: rgba(128, 128, 128, 0.5);
+    margin: 0;
+    padding: 0;
+    height: 12px;
+    width: 100%;
+    max-width: 500px;
+    cursor: e-resize;
+}
+
+.thin-progress {
+    background-color: rgba(128, 128, 128, 0.5);
+    margin: 0;
+    padding: 0;
+    height: 5px;
+    width: 100%;
+    cursor: e-resize;
+}
+
+.video-viewpoint {
+    background-color: rgba(255, 255, 0, 0.7);
+    margin: 0;
+    padding: 0;
+    height: 12px;
+    width: 0%;
+}
+
+.thin-viewpoint {
+    background-color: rgba(255, 255, 0, 0.7);
+    margin: 0;
+    padding: 0;
+    height: 5px;
+    width: 0%;
+}
+
+.to-play, .to-pause {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+}
+
+.check-play {
+    margin: 0;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hide-play {
+    display: none;
+}
+
+.change-volume, .change-speed {
+    -webkit-appearance: none;
+    width: 150px;
+    margin-top: 10px;
+    /* -webkit-transition: .2s;
+    transition: opacity .2s; */
+}
+
+.change-volume::-webkit-slider-thumb, .change-speed::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 0, 1);
+    border-radius: 5px;
+  }
+
+.skip-time {
+    margin-top: 3px;
+    padding: 0;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.skip-forward {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 12px;
+}
+
+.skip-back {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 35px;
+}
+
+
+.hide {
+    display: none;
+}
